@@ -1,0 +1,99 @@
+body {
+    background-color:$color-contraste;
+    max-width: 100%;
+}
+
+.navegador{
+    background-color: $color-primario;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+        div{
+            background-color: $color-primario;
+            padding: 0px 25px 0px 25px;
+            margin: auto;
+            max-width: 1440px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    @media(max-width: 768px){
+    }
+    @media(max-width: 556px){
+        height: 80px;
+    }
+
+    .icono-menu{
+        color: $color-contraste;
+        font-size: 40px;
+        padding: 20px 5px;
+        max-width: 20%;
+        display: none;
+        &:hover + .navegador-links{
+            left: 0;
+        }
+        @media(max-width: 768px){
+            display: block;
+        }
+    }
+}
+
+.navegador-links {
+    max-width: 69%;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin: 0px;
+    @media(max-width: 942px){
+        max-width: 66%;
+    }
+    @media(max-width: 768px){
+        position: absolute;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        background-color: $color-secundario;
+        height: 100vh;
+        flex-direction: column;
+        transition: 0.5s;
+        &:hover{
+            left: 0px;
+        }
+    }
+}
+
+.navegador-link{
+    list-style: none;
+    a{
+        display: block;
+        padding: 20px 5px;
+        color:$color-contraste;
+        text-decoration: none;
+        font-size: 20px;
+        &:hover{
+            color: #000000;
+        }
+    }
+}
+
+.titulo {
+    max-width: 31%;
+    max-height: 60px;
+    transition: width 0.5s ease;
+    @media(max-width: 942px){
+        max-width: 34%;
+    }
+    @media(max-width: 768px){
+        max-width: 47%;;
+        }
+    @media(max-width: 556px){
+        max-width: 76%;
+        }
+    @media(max-width: 367px){
+        max-width: 78%;
+    }
+}
+

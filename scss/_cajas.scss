@@ -1,0 +1,126 @@
+.titulo-cajas{
+       width: 100%;
+       background: $color-primario;
+       margin-bottom: 4px;
+    }
+       h1 {
+        padding: 0px 0px 0px 20px;
+        max-width: 1440px;
+        margin:auto;
+       }
+.cajas {
+    @extend %cajas;
+}
+
+.caja {
+    @extend %caja;
+    @media(max-width: 1024px){
+        width: 32%;
+    }
+    @media(max-width: 992px){
+    
+    }             
+    @media (max-width: 768px) {
+             width: 48%;
+    }
+    @media(max-width: 556px){
+                 width: 94%;
+    }
+    div { 
+        box-shadow: 0 2px 6px #0000000f, 0 1px 3px #0000000f;
+        padding: 20px;
+        box-shadow: 2px 6px rgba(0, 0, 0, 0.0588235294), 0 1px 3px rgba(0, 0, 0, 0.0588235294);
+        background-color:$color-terciario;
+        width: 99%;
+        p {
+            height: 100px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+        }
+    }
+}
+
+.parrafo1 {
+        max-width: 1440px;
+        margin: auto;
+        font-size: 21px;
+        color:$color-terciario;
+        text-align: start;
+        padding: 15px 0px 15px 20px;
+        text-shadow:$sombra;
+        @media(max-width: 992px){
+               padding: 18px;
+        }
+        @media(max-width: 556px){
+                    padding: 7px;
+                    font-size: 16px;
+        }
+}
+
+.caja-titulo{
+        font-weight: normal;
+        overflow: hidden;
+}
+
+.caja-img{
+    width:100%;
+    aspect-ratio: 7 / 9;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: 0.5s;
+    &:hover{ 
+        transform: scale(1.06);
+    }
+}
+
+.caja-boton{
+    @extend %boton;
+}
+
+
+h1 { 
+    font-size: 35px;
+    color:$color-contraste;
+    text-align: start;
+    @media(max-width: 556px){
+        padding: 0px 15px;
+        font-size: 29px;
+    }
+    @media(max-width: 367px){
+            font-size: 22px;
+    }
+}
+
+h4 {
+    font-size: 23px;
+    color:$color-contraste;
+    padding: 0px 15px 0px 0px;
+    z-index: 1;
+    @media(max-width: 768px){
+            font-size: 26px;
+            padding: 8px 0px;
+           }
+    @media(max-width: 556px){
+                font-size: 21px;
+                padding: 0px;
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
