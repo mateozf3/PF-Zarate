@@ -637,7 +637,7 @@ footer {
 }
 
 .main-content-form {
-  background-image: url(/img/ingredientes-hamburguesa-vista-superior-mesa-madera.jpg);
+  background-image: url(../img/ingredientes-hamburguesa-vista-superior-mesa-madera.jpg);
   background-size: cover;
   margin: auto;
   margin-bottom: 20px;
@@ -650,7 +650,7 @@ footer {
 }
 @media (max-width: 768px) {
   .main-content-form {
-    background-image: url(/img/ingredientes-hamburguesa-vista-superior-mesa-madera_2.jpg);
+    background-image: url(../img/ingredientes-hamburguesa-vista-superior-mesa-madera_2.jpg);
   }
 }
 
